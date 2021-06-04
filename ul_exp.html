@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+
+      
+        body {
+            background-color: rgb(203, 230, 240);
+        }
+
+
+        ul{
+            
+            list-style: none; 
+            padding: 0;
+             margin: 0;
+        }
+
+        li { 
+            padding-left: 16px; 
+            font-size: 18px;
+            margin: 10px;
+            
+        }
+
+li.one::before {
+    background-image: url('./Ang.png');  
+}
+li.two::before {
+    background-image: url('./node1.png');  
+}
+li.three::before {
+    background-image: url('./javascript.png');  
+}
+
+li::before {
+    background-size: 16px 16px; 
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px; 
+    height: 20px;
+    content:"";
+    vertical-align: middle;
+    padding-right:8px;
+}
+    
+    </style>
+</head>
+<body>
+
+    <h1>Unordered list</h1>
+    <ul >
+        <li class="one">Angular</li>
+        <li class="two">NodeJS</li>
+        <li class="three">Javascript</li>
+    </ul>
+
+
+    </body>
+</html>
